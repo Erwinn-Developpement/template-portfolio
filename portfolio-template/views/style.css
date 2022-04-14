@@ -1,0 +1,206 @@
+:root {
+    --bg-color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--bg-color);
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hr {
+    width: 15%;
+    height: 3px;
+    background-color: #7a1e17;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+::-webkit-scrollbar {
+    background: #000;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #7a1e17;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d62e22;
+}
+
+
+/* HEADER */
+
+header {
+    text-align: center;
+}
+
+
+/* Cards */
+
+#cards {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.cards {
+    width: 20%;
+    height: 200px;
+    background: #000;
+    color: lavender;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 50px;
+
+}
+
+#cards1 {
+    border: 2px solid #7a1e17; 
+    border-radius: 10px; 
+    transform: rotate(5deg); 
+}
+#cards1:hover {
+   animation: cards1 0.5s;
+}
+
+
+#cards2 {
+    border: 2px solid #d62e22; 
+    border-radius: 10px; 
+    transform: rotate(-5deg);
+}
+#cards2:hover {
+    animation: cards2 0.5s;
+}
+
+
+#cards3 {
+    border: 2px solid #5e2b28; 
+    border-radius: 10px; 
+    transform: rotate(5deg)
+}
+#cards3:hover {
+    animation: cards1 0.5s;
+}
+
+.hr-cards {
+    width: 90%;
+    height: 3px;
+    background: #7a1e17;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: 10px;
+}
+
+
+/* Compétences */
+
+#competences {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.competences {
+    width: 60%;
+    height: 200px;
+    background: #000;
+    color: lavender;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #7a1e17; 
+    border-radius: 10px; 
+    transform: rotate(5deg); 
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 100px;
+    text-align: center;
+    background-color: #111;
+    height: 80px;
+}
+
+
+footer h2 {
+    padding-top: 10px;
+}
+
+
+/* Animations */
+
+@keyframes cards1 {
+    0% {transform: rotate(5deg);}
+
+    15% {transform: rotate(3deg);}
+
+    30% {transform: rotate(5deg);}
+
+    45% {transform: rotate(3deg);}
+
+    60% {transform: rotate(5deg);}
+
+    80% {transform: rotate(3deg);}
+
+    100% {transform: rotate(5deg);}
+}
+
+@keyframes cards2 {
+    0% {transform: rotate(-5deg);}
+
+    15% {transform: rotate(-3deg);}
+
+    30% {transform: rotate(-5deg);}
+
+    45% {transform: rotate(-3deg);}
+
+    60% {transform: rotate(-5deg);}
+
+    80% {transform: rotate(-3deg);}
+
+    100% {transform: rotate(-5deg);}
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+
+    /* Cards */
+
+    .cards {
+        width: 50%;
+        margin-top: 50px;
+    }
+
+    .hr-cards {
+        width: 90%;
+        height: 3px;
+        background: #7a1e17;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    
+}
+
